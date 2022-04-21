@@ -1,9 +1,10 @@
 .content{
     border: 5px solid rgb(4, 161, 122);
+    border-radius: 10px;
     overflow: auto;
-    margin: 50px 40px ;
-    width: 450px;
-    line-height: 1em;
+    margin: 50px -140px ;
+    width: 800px;
+    line-height: 1.5em;
 }
 .content h1{
     padding: 0px 15px 0px 15px;
@@ -14,4 +15,13 @@
 }
 .content p{
     padding: 0px 15px 0px 15px;
+}
+.mkts img{
+    margin-top: -15px;
+    width: 100px ;
+    transition-duration: 0.3s;
+}
+.mkts img:hover{
+    border-radius: 50%;
+    border: 2px solid rgb(4, 161, 122);
 }

@@ -22,13 +22,13 @@ const Calc = ({text}) => {
         let margP = margemInt / 100 /*margem de lucro*/
         let impP = impostoInt /100 /*imposto*/
         /* e aqui eu mostro o total*/
-        let tot = custoInt + (custoInt * comiP) + freteInt + embalagemInt + (impP * custoInt)
+        let tot = custoInt + (custoInt * comiP) + freteInt + embalagemInt + (impP * custoInt) +(margP *custoInt)
         res.innerHTML = tot.toFixed(2)
 
     }
     return ( 
         <div >
-            <h1> Calculadora do {text}</h1>
+            <h1 className={styles.h1_h2}> Calculadora do {text}</h1>
             <form className={styles.content}>
             <label forhtml='Preço de Custo'> Preço de Custo </label>
             <input type='Number' name='Preço de Custo'  id='Preço de Custo' placeholder="Insira o preço de Custo" />
@@ -43,8 +43,8 @@ const Calc = ({text}) => {
             <label forhtml='Imposto'> Imposto </label>
             <input type='Number' name='Imposto'  id='imposto' placeholder="Valor do imposto" />
             </form>
-            <button type='submit' onClick={() => calcular()} value ='calcular'> Calcular</button>
-            <h2>Valor de venda: <span id='res'>0</span></h2>
+            <button type='submit' onClick={() => calcular()} value ='calcular' className={styles.bottom}> Calcular</button>
+            <h2  className={styles.h1_h2}>Valor de venda: <span id='res'>0</span></h2>
         </div>
      );
 }
