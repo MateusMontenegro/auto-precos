@@ -1,0 +1,17 @@
+.content{
+    border: 5px solid rgb(4, 161, 122);
+    overflow: auto;
+    margin: 50px 40px ;
+    width: 450px;
+    line-height: 1em;
+}
+.content h1{
+    padding: 0px 15px 0px 15px;
+    
+}
+.content h2{
+    padding: 0px 15px 0px 15px;
+}
+.content p{
+    padding: 0px 15px 0px 15px;
+}

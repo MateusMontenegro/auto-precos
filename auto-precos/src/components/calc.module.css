@@ -1,0 +1,11 @@
+.content{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.content label{
+    margin-bottom: 10px;
+}
+.content input::placeholder{
+    color: rgba(128, 128, 128, 0.986);
+}
